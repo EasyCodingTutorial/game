@@ -1,0 +1,9 @@
+.NewModel {
+    display: flex;
+    justify-content: center;
+}
+
+.NewModel img {
+    height: 100%;
+    width: 100%;
+}

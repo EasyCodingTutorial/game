@@ -1,0 +1,122 @@
+.Slider {
+    position: relative;
+}
+
+.Slider img {
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-150deg, rgba(0, 0, 0, 0.3), rgba(247, 247, 247, 0.2));
+}
+
+.Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Content h6 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.Content h5 {
+    font-weight: 900;
+    font-size: 70px;
+}
+
+/* For Controls */
+.Controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 33;
+}
+
+.PrevButton,
+.NextButton {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media(max-width:1400px) {
+
+    .Content h6 {
+        font-weight: 800;
+        font-size: 24px;
+    }
+
+    .Content h5 {
+        font-weight: 900;
+        font-size: 60px;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .Content h6 {
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+    .Content h5 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+}
+
+@media(max-width:900px) {
+
+
+    .Slider img {
+        height: 70vh;
+        width: 100%;
+    }
+
+    .Content h6 {
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    .Content h5 {
+        font-weight: 900;
+        font-size: 30px;
+    }
+}
+
+@media(max-width:471px) {
+
+    .Slider img {
+        height: 60vh;
+        width: 100%;
+    }
+
+
+    .Content h6 {
+        font-weight: 800;
+        font-size: 16px;
+    }
+
+    .Content h5 {
+        font-weight: 900;
+        font-size: 20px;
+    }
+}

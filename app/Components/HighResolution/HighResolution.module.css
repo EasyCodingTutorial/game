@@ -1,0 +1,80 @@
+.HighResolutionGames {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.HighResolution {
+    flex-basis: calc(25% - 10px);
+    height: 400px;
+    box-shadow: 10px 10px 10px -10px var(--main);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.HighResolution img {
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.HighResolution:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    box-shadow: 4px 5px 5px -4px var(--main);
+}
+
+.Content {
+    position: absolute;
+    bottom: -100px;
+    padding: 20px;
+    width: 100%;
+    background: #1d1c1c;
+}
+
+.HighResolution:hover .Content {
+    bottom: 0px;
+}
+
+.Content div {
+    display: flex;
+    justify-content: space-between;
+    margin-block: 5px;
+}
+
+.Content h6 {
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.Content div p {
+    font-weight: 800;
+    font-size: 12px;
+}
+
+/* To Make It Responsive */
+
+@media(max-width:1200px) {
+
+    .HighResolution {
+        flex-basis: calc(33.33% - 10px);
+    }
+
+}
+
+@media(max-width:900px) {
+
+    .HighResolution {
+        flex-basis: calc(50% - 10px);
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .HighResolution {
+        flex-basis: calc(100%);
+    }
+
+}

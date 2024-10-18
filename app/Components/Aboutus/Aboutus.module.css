@@ -1,0 +1,120 @@
+.Aboutus {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-block: 20px;
+}
+
+.Aboutus div {
+    width: 50%;
+    overflow: hidden;
+}
+
+.Aboutus div img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px -10px var(--main);
+}
+
+.Aboutus div h6 {
+    font-weight: 700;
+    font-size: 18px;
+    color: gold;
+    margin-top: 10px;
+}
+
+.Aboutus div h5 {
+    font-size: 50px;
+    margin-block: 10px;
+    font-weight: 800;
+}
+
+.Aboutus div p {
+    font-size: 13px;
+}
+
+.CustomContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.CustomContent div {
+    flex-basis: calc(50% - 10px);
+    border: 0.1px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.CustomContent div h6 {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 3px;
+}
+
+
+@media(max-width:1600px) {
+    .Aboutus div h6 {
+        font-weight: 700;
+        font-size: 15px;
+        color: gold;
+        margin-top: 10px;
+    }
+
+    .Aboutus div h5 {
+        margin-block: 10px;
+        font-size: 40px;
+        font-weight: 800;
+    }
+}
+
+@media(max-width:1200px) {
+    .Aboutus div h6 {
+        font-weight: 700;
+        font-size: 13px;
+        color: gold;
+        margin-top: 10px;
+    }
+
+    .Aboutus div h5 {
+        margin-block: 10px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+}
+
+@media(max-width:1000px) {
+    .Aboutus {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .Aboutus div {
+        width: 100%;
+    }
+
+    .Aboutus div h6 {
+        font-weight: 700;
+        font-size: 13px;
+        color: gold;
+        margin-top: 10px;
+    }
+
+    .Aboutus div h5 {
+        margin-block: 10px;
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+}
+
+@media(max-width:450px) {
+
+    .Aboutus div h5 {
+        margin-block: 10px;
+        font-size: 20px;
+        font-weight: 800;
+    }
+}

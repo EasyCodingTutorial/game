@@ -1,0 +1,64 @@
+.Features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Main {
+    flex-basis: calc(25% - 10px);
+    height: 250px;
+    box-shadow: var(--boxShadow);
+    overflow: hidden;
+    box-shadow: 10px 10px 10px -10px var(--main);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #000;
+}
+
+.Main:hover {
+    box-shadow: 3px 4px 4px 3px var(--main)
+}
+
+.Box {
+    text-align: center;
+}
+
+.Box .Icon {
+    font-size: 40px;
+}
+
+.Box h6 {
+    font-weight: 800;
+    font-size: 18px;
+    margin-block: 5px;
+}
+
+.Box .Desc {
+    font-size: 11px;
+}
+
+
+@media(max-width:1200px) {
+
+    .Main {
+        flex-basis: calc(33.33% - 10px);
+    }
+
+}
+
+@media(max-width:900px) {
+
+    .Main {
+        flex-basis: calc(50% - 10px);
+    }
+
+}
+
+@media(max-width:600px) {
+
+    .Main {
+        flex-basis: calc(100%);
+    }
+
+}
